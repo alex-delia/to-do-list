@@ -1,0 +1,119 @@
+h1,
+h2 {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 10fr;
+    height: 100vh;
+}
+
+.header {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    padding-right: 100px;
+    background-color: rgb(219, 219, 219);
+    border-bottom: 1px solid black;
+}
+
+.newItem {
+    border: none;
+    padding: 16px 40px;
+    border-radius: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(75, 255, 75);
+    color: rgb(31, 31, 31);
+}
+
+.newItem:hover {
+    cursor: pointer;
+    background-color: rgb(36, 190, 36);
+}
+
+.dialogForm {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formItem {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    flex: 1;
+}
+
+.formButtons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sidebar {
+    background-color: rgb(219, 219, 219);
+    padding: 20px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.project {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    font-size: 20px;
+}
+
+.project:hover {
+    cursor: pointer;
+    background-color: rgb(161, 161, 161);
+    border-radius: 8px;
+}
+
+.activeProject {
+    font-weight: bold;
+}
+
+.content {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    column-gap: 16px;
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    border-radius: 8px;
+    padding: 16px 16px;
+}
+
+.delete {
+    background-color: red;
+    color: white;
+    width: fit-content;
+}
+
+.delete:hover {
+    cursor: pointer;
+    background-color: rgb(198, 0, 0);
+}
+
+
+dialog {
+    font-size: 20px;
+}
